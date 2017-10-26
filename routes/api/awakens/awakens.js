@@ -11,7 +11,7 @@ router.route('/:phenotype')
     })
     .get(function (req, res, next) {
         console.log(req);
-        axios.get('https://genomelink.io/v1/reports/eye-color?population=european'  {
+        axios.get('https://genomelink.io/v1/reports/eye-color?population=european', {
             headers: {
                 Authorization: "Bearer GENOMELINKTEST"
             }
