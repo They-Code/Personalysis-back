@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const yelpRoutes = require("./awakens");
+const awakensRoutes = require("./awakens");
 
 router.param(':some_id', function (req, res, next, id) {
   next();

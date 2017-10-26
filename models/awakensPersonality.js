@@ -1,9 +1,9 @@
 module.exports = function (sequelize, DataTypes) {
-    
+
         var awakensPersonality = sequelize.define("User", {
             name: {type: DataTypes.STRING, allowNull: false},
-            id: {type: DataTypes.STRING, allowNull: false},
-            agreeableness: {type: DataTypes.STRING, allowNull: true}, 
+            id: {type: DataTypes.STRING, primaryKey: true, allowNull: false},
+            agreeableness: {type: DataTypes.STRING, allowNull: true},
             neuroticism: {type: DataTypes.STRING, allowNull: true},
             extraversion: {type: DataTypes.STRING, allowNull: true},
             conscientiousness: {type: DataTypes.STRING, allowNull: true},
@@ -13,8 +13,7 @@ module.exports = function (sequelize, DataTypes) {
             harmAvoidance: {type: DataTypes.STRING, allowNull: true},
             noveltySeeking: {type: DataTypes.STRING, allowNull: true},
         })
-    
+
         return awakensPersonality
 }
-    
-       
+
