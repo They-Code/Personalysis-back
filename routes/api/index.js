@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const awakensRoutes = require("./awakens");
+const usersRoutes = require("./awakens");
 
-router.use("/awakens", awakensRoutes);
+router.use("/user", usersRoutes);
 
 module.exports = router;

@@ -12,6 +12,7 @@ module.exports = function (sequelize, DataTypes) {
             rewardDependence: {type: DataTypes.STRING, allowNull: true},
             harmAvoidance: {type: DataTypes.STRING, allowNull: true},
             noveltySeeking: {type: DataTypes.STRING, allowNull: true},
+            gambling: {type: DataTypes.STRING, allowNull: true}
         })
     
         return awakensPersonality
